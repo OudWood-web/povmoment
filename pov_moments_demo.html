@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>POV Moments — Digital Disposable Camera</title>
+<style>
+:root{--ink:#20201e;--muted:#77766f;--paper:#f7f5ef;--card:#fffdf8;--line:#e7e2d8;--accent:#b8d2a0;--dark:#28352b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:22px clamp(18px,5vw,64px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fbfaf6}
+.brand{font-weight:850;letter-spacing:-.06em;font-size:23px}.brand span{color:#718b61}.tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+main{max-width:1100px;margin:auto;padding:34px 20px 70px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,4vw,40px);box-shadow:0 8px 28px #29251608}
+.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:#6f8762;font-weight:800}
+h1{font-size:clamp(38px,6vw,68px);line-height:.98;letter-spacing:-.065em;margin:16px 0}p{line-height:1.6;color:var(--muted)}
+.lead{font-size:16px;max-width:490px}.eventline{display:flex;gap:10px;align-items:center;margin-top:26px;color:var(--muted);font-size:13px}
+.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:100px;padding:8px 12px;font-size:12px;background:#fff}
+.camera-card{background:#29342b;color:#fff;border-radius:24px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;min-height:330px;position:relative;overflow:hidden}
+.camera-card:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #ffffff20;border-radius:50%;right:-65px;top:40px;box-shadow:0 0 0 25px #ffffff08,0 0 0 50px #ffffff05}
+.camera-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#d4dfce;position:relative;z-index:1}
+.lens{width:116px;height:116px;border-radius:50%;border:8px solid #111a13;background:radial-gradient(circle at 40% 35%,#819d7d 0 9%,#425c47 10% 23%,#17251b 24% 43%,#5f7758 44% 48%,#111a13 49%);margin:24px auto;box-shadow:0 0 0 2px #b4c4aa;position:relative;z-index:1}
+.camera-bottom{position:relative;z-index:1}.camera-bottom strong{font-size:26px;letter-spacing:-.04em}.camera-bottom p{color:#d0d8cc;margin-bottom:0;font-size:13px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:34px 2px 14px}.section-head h2{margin:0;font-size:24px;letter-spacing:-.04em}.section-head p{margin:4px 0 0;font-size:13px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+button,.upload-label{border:0;border-radius:13px;padding:14px 16px;font:inherit;font-weight:750;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.primary{background:var(--dark);color:white}.secondary{background:#edf1e8;color:#31432e;border:1px solid #dce5d5}.outline{background:white;color:var(--ink);border:1px solid var(--line)}button:hover,.upload-label:hover{transform:translateY(-1px);filter:brightness(.98)}
+input[type=file]{display:none}.small{font-size:12px;color:var(--muted)}.status{margin-top:12px;min-height:18px;font-size:12px;color:#526d47}
+.gallery{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px}.gallery-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.count{background:#edf1e8;padding:7px 10px;border-radius:100px;font-size:12px;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.photo{position:relative;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:#eeece5}.photo img{width:100%;height:100%;object-fit:cover}.photo .num{position:absolute;bottom:8px;left:8px;background:#0009;color:white;border-radius:8px;padding:4px 7px;font-size:10px}.empty{grid-column:1/-1;border:1px dashed #d9d3c8;border-radius:14px;padding:34px 14px;text-align:center;color:var(--muted);font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.step{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fbfaf6}.step b{display:block;margin:9px 0 4px}.step p{font-size:12px;margin:0}.step .icon{font-size:22px}
+footer{padding:22px;text-align:center;color:var(--muted);font-size:11px}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.camera-card{min-height:270px}.grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.actions{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="brand">POV<span>.</span> moments</div><div class="tag">Your event, through every POV</div></header>
+<main>
+  <section class="hero">
+    <div class="panel">
+      <div class="eyebrow">Digital disposable camera</div>
+      <h1>Every guest.<br>Every angle.<br><span style="color:#718b61">One story.</span></h1>
+      <p class="lead">Abadikan momen dari sudut pandangmu. Ambil foto, unggah, dan jadilah bagian dari cerita acara ini — langsung dari browser, tanpa instal aplikasi.</p>
+      <div class="eventline"><span class="pill">✦ Wedding edition</span><span>Album bersama tamu</span></div>
+      <div class="actions">
+        <button class="primary" id="openCamera">◎ Buka kamera</button>
+        <label class="upload-label secondary" for="fileInput">＋ Unggah foto</label>
+        <input id="fileInput" type="file" accept="image/*" multiple>
+      </div>
+      <div class="status" id="status" aria-live="polite">Foto pada demo ini tersimpan di browser perangkat Anda.</div>
+      <video id="video" autoplay playsinline style="display:none;width:100%;border-radius:14px;margin-top:12px;background:#111"></video>
+      <div id="cameraControls" style="display:none;gap:8px;margin-top:8px">
+        <button class="primary" id="takePhoto">● Ambil foto</button><button class="outline" id="closeCamera">Tutup kamera</button>
+      </div>
+      <canvas id="canvas" style="display:none"></canvas>
+    </div>
+    <div class="camera-card">
+      <div class="camera-top"><span>POV CAM / 001</span><span>● REC MOMENTS</span></div>
+      <div class="lens"></div>
+      <div class="camera-bottom"><strong>Made of moments.</strong><p>Small moments make the best memories.</p></div>
+    </div>
+  </section>
+  <section>
+    <div class="section-head"><div><h2>Guest photo roll</h2><p>Potongan cerita yang dikumpulkan dari semua sudut pandang.</p></div><span class="count" id="count">0 FOTO</span></div>
+    <div class="gallery"><div class="gallery-top"><b>Album acara</b><button class="outline" id="downloadAll" style="padding:9px 12px;font-size:12px">Unduh foto</button></div><div class="grid" id="photoGrid"><div class="empty" id="empty">Belum ada foto.<br>Jadilah yang pertama mengabadikan momen!</div></div></div>
+  </section>
+  <section class="steps">
+    <div class="step"><div class="icon">▦</div><b>01 — Scan QR</b><p>Pindai QR di meja untuk membuka halaman album acara.</p></div>
+    <div class="step"><div class="icon">◎</div><b>02 — Capture</b><p>Ambil foto langsung atau pilih foto dari galeri perangkat.</p></div>
+    <div class="step"><div class="icon">↗</div><b>03 — Share the moment</b><p>Gabungkan momen dari seluruh tamu ke dalam satu album.</p></div>
+  </section>
+  <p class="small" style="margin:18px 4px 0">Catatan demo: galeri ini bersifat lokal di perangkat/browser yang sedang digunakan. Agar semua tamu dapat melihat album yang sama, diperlukan backend, penyimpanan cloud, tautan acara aktif, dan QR Code yang mengarah ke tautan tersebut.</p>
+</main>
+<footer>POV MOMENTS · A little camera for a lifetime of memories</footer>
+<script>
+const fileInput=document.getElementById('fileInput'),grid=document.getElementById('photoGrid'),count=document.getElementById('count'),statusEl=document.getElementById('status'),video=document.getElementById('video'),controls=document.getElementById('cameraControls'),canvas=document.getElementById('canvas');
+let photos=[],stream=null;
+function addFiles(files){[...files].forEach(file=>{if(!file.type.startsWith('image/'))return;const reader=new FileReader();reader.onload=e=>{photos.unshift({url:e.target.result,name:file.name||'POV moment'});render()};reader.readAsDataURL(file)});if(files.length)statusEl.textContent='Foto ditambahkan ke album demo di browser ini.'}
+function render(){grid.innerHTML='';count.textContent=photos.length+' FOTO';if(!photos.length){grid.innerHTML='<div class="empty">Belum ada foto.<br>Jadilah yang pertama mengabadikan momen!</div>';return}photos.forEach((p,i)=>{const d=document.createElement('div');d.className='photo';const img=document.createElement('img');img.src=p.url;img.alt='Foto tamu '+(i+1);const n=document.createElement('span');n.className='num';n.textContent='POV #'+String(i+1).padStart(2,'0');d.append(img,n);grid.append(d)})}
+fileInput.addEventListener('change',e=>{addFiles(e.target.files);fileInput.value=''});
+document.getElementById('openCamera').addEventListener('click',async()=>{try{stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false});video.srcObject=stream;video.style.display='block';controls.style.display='flex';statusEl.textContent='Kamera aktif. Posisikan momen lalu ambil foto.'}catch(e){statusEl.textContent='Kamera tidak tersedia atau izin belum diberikan. Coba unggah foto dari galeri.'}});
+document.getElementById('takePhoto').addEventListener('click',()=>{if(!stream)return;canvas.width=video.videoWidth;canvas.height=video.videoHeight;canvas.getContext('2d').drawImage(video,0,0);photos.unshift({url:canvas.toDataURL('image/jpeg',.88),name:'POV capture'});render();statusEl.textContent='Foto berhasil diambil dan ditambahkan ke galeri demo.'});
+function stopCamera(){if(stream){stream.getTracks().forEach(t=>t.stop());stream=null}video.style.display='none';controls.style.display='none'}
+document.getElementById('closeCamera').addEventListener('click',stopCamera);
+document.getElementById('downloadAll').addEventListener('click',()=>{if(!photos.length){statusEl.textContent='Belum ada foto untuk diunduh.';return}photos.forEach((p,i)=>{const a=document.createElement('a');a.href=p.url;a.download='pov-moment-'+(i+1)+'.jpg';document.body.append(a);a.click();a.remove()});statusEl.textContent='Permintaan unduh foto dikirim ke browser.'});
+</script>
+</body></html>
